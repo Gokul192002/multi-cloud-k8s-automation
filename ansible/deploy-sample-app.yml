@@ -1,0 +1,6 @@
+- name: Deploy Sample Nginx App
+  hosts: localhost
+  tasks:
+    - name: Deploy Nginx Deployment and Service
+      shell: |
+        kubectl apply -f ../kubernetes/nginx-deployment.yaml
